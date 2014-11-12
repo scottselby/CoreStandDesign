@@ -1,0 +1,284 @@
+﻿
+@{
+    ViewBag.Title = "Materials";
+    Layout = "~/Views/Shared/_CoreStandLayout.cshtml";
+}
+<br/>
+<div class="container" style="position:relative;margin:0 auto !important;">
+    <div class="col-md-offset-2"></div>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab_a" data-toggle="tab">Browse Materials</a></li>
+        <li><a href="#tab_b" data-toggle="tab">KeyWord Search</a></li>
+        <li><a href="#tab_c" data-toggle="tab">Purchased/Previous Items</a></li>
+        <li><a href="#tab_d" data-toggle="tab">Gotta Have a 4th Tab!</a></li>
+    </ul>
+    <div class="tab-content">
+        
+        <div class="tab-pane active" id="tab_a">
+            <div class="container">
+                <form class="form-group">
+                    <div class="row big-row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-10">
+                            
+                            <p class="form-inline">I'm interested In </p>
+                            <select id="materialSubject" class="material-select">
+                                <option value="-1">-- Select Subject --</option>
+                                <option value="1">English Language Arts</option>
+                                <option value="2">Literacy In History / Social Science</option>
+                                <option value="3">Literacy In Science / Technology</option>
+                                <option value="4">Math</option>
+                                <option value="5">All Subjects</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row disabled student-row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-10">
+                            <p class="form-inline">For</p>
+                            <i class="fa fa-spin fa-spinner grade-loading" style="position: absolute;left: 153px;font-size: 30pt;display: none;top:0px" ></i>
+                            <select id="materialGrade" class="material-select" disabled="disabled">
+                                <option value="-1">-- Select Grade Level --</option>
+                                <option value="1">Kindergarden</option>
+                                <option value="2">First Grade</option>
+                                <option value="3">Second Grade</option>
+                                <option value="4">Third Grade</option>
+                                <option value="5">Fourth Grade</option>
+                                <option value="6">Fifth Grade</option>
+                                <option value="7">Sixth Grade</option>
+                                <option value="8">Seventh Grade</option>
+                                <option value="9">Eigth Grade</option>
+                                <option value="99">All Grade Levels</option>
+                            </select>
+                            <p class="form-inline">Students</p>
+                        </div>
+                    </div>
+                    <div class="row disabled big-row group-row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-10">
+                            <p class="form-inline">In</p>
+                            <i class="fa fa-spin fa-spinner group-loading" style="position: absolute;left: 139px;font-size: 30pt;top: 13px;display: none;"></i>
+                            <select id="materialGroup" class="material-select">
+                                <option value="-1">-- Select Group --</option>
+                                <option value="1">Reading</option>
+                                <option value="2">Writing</option>
+                                <option value="3">Speaking And Listening</option>
+                                <option value="4">Language</option>
+                                <option value="5">All</option>
+                            </select>
+                            <p class="form-inline">Standard Groups</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-4"><input type="button" class="btn btn-success" value="Search" id="searchMaterials" style="padding:10px 65px;" disabled="disabled"/></div>
+                      
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab_b">
+            <div class="container">
+                <form class="form-group">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                            <input type="text" class="input-lg" placeholder="Keyword(s)" id="searchText" style="width: 500px;margin:30px 12px 0 12px;" />
+                            <input type="button" class="btn btn-success" value="Search" id="keywordSearch" style="padding:10px 65px;" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2" style="height:50px;"></div>
+                    </div>
+                </form>
+            </div>
+          
+        </div>
+
+        <div class="tab-pane" id="tab_c">
+            <div class="container" style="height:100px">
+                
+                
+
+            </div>
+        </div>
+
+        <div class="tab-pane" id="tab_d">
+            <div class="container" style="height:100px;">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="row" style="background-color: #666;height:35px;">
+        
+    </div>
+    <div class="row" style="height:900px;background-color: #fff;margin-top:25px;">
+        <div class="col-md-3">
+            <div class="material-item">
+                    <img src="http://www.corestand.com/wp-content/uploads/2012/11/CoreStandTeamCover3-150x150.jpg" style="height:99%;" />
+                <div class="material-title">
+                    <p>True to the Text: "A Modest Proposal"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                    <img src="http://www.corestand.com/wp-content/uploads/2012/05/Murder_1-150x150.jpg" style="height:99%;"/>
+                <div class="material-title">
+                    <p>The Murder of Fred Hampton</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                    <img src="http://www.corestand.com/wp-content/uploads/2012/11/CoreStandTeamCover3-150x150.jpg" style="height:99%;" />
+                <div class="material-title">
+                    <p>The Bill of Rights Illustrated</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                    <img src="http://www.corestand.com/wp-content/uploads/2012/05/shabanu_7-150x150.jpg" style="height:99%;" />
+                <div class="material-title">
+                    <p>The Murder of Fred Hampton</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                    <img src="http://www.corestand.com/wp-content/themes/corestand_theme_new/images/No_Image.jpg" style="height:99%;" />
+              
+                <div class="material-title">
+                    <p>Sample Really long title that we need to do something about</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                <div class="material-image">
+
+                </div>
+                <div class="material-title"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+                <div class="material-image">
+
+                </div>
+                <div class="material-title"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="material-item">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $(document).on('change', '#materialSubject', function(e) {
+            if ($(this).val() != -1) {
+                $('.grade-loading').show();
+                $('.student-row').removeClass('disabled');
+                $('#materialGrade').val(-1).prop('disabled', false);
+                $('#materialGroup').val(-1).prop('disabled', true);
+                setTimeout(function() {
+                    $('.grade-loading').hide();
+                }, 700);
+
+            } else {
+                $('.student-row, .group-row').addClass('disabled');
+                $('#materialGrade, #materialGroup').val(-1).prop('disabled', true);
+            }
+
+            if ($('#materialGroup').prop('disabled') || $('#materialGroup').val() == -1) {
+                $('#searchMaterials').prop('disabled', true);
+            } else {
+                $('#searchMaterials').prop('disabled', false);
+            }
+        });
+
+        $(document).on('change', '#materialGrade', function (e) {
+            if ($(this).val() != -1) {
+                $('.group-loading').show();
+                $('.group-row').removeClass('disabled');
+                $('#materialGroup').val(-1).prop('disabled', false);
+                setTimeout(function () {
+                    $('.group-loading').hide();
+                }, 700);
+            } else {
+                $('.group-row').addClass('disabled');
+                $('#materialGroup').val(-1).prop('disabled', true);
+            }
+
+            if ($('#materialGroup').prop('disabled') || $('#materialGroup').val() == -1) {
+                $('#searchMaterials').prop('disabled', true);
+            } else {
+                $('#searchMaterials').prop('disabled', false);
+            }
+        });
+
+        $(document).on('change', '#materialGroup', function (e) {
+
+            if ($('#materialGroup').prop('disabled') || $('#materialGroup').val() == -1) {
+                $('#searchMaterials').prop('disabled', true);
+            } else {
+                $('#searchMaterials').prop('disabled', false);
+            }
+        });
+
+        $(document).on('keyup', '#searchText', function(e) {
+            if ($(this).val()) {
+                $('#keywordSearch').prop('disabled', false);
+            } else {
+                $('#keywordSearch').prop('disabled', true);
+            }
+
+            if (e.which == 13 || e.keyCode == 13) {
+                $('#keywordSearch').trigger('click');
+            }
+        });
+    });
+</script>

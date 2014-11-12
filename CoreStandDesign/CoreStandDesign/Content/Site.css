@@ -1,0 +1,27 @@
+﻿body, div, nav{ margin: 0 !important; padding: 0 !important;}
+.green-top{ width: 100%;height: 350px;background-color: #00ced1;color: #fff0f5;}
+.image-container{height:420px;width:100%;overflow: hidden;}
+.text-over-image {position: absolute;color: #fff;top: 334px;left: 75px;font-size: 42pt;font-family: 'sans-serif';text-shadow: 1px 1px 2px rgba(0,0,0,1);}
+.text-over-image-two {position: absolute;color: #fff;top: 417px;left: 90px;font-size: 26pt;font-family: 'Arial';text-shadow: 1px 1px 2px rgba(0,0,0,1);line-height: 30px;}
+.icon-circle{ position: relative; margin: 0 auto !important; width: 150px; height: 150px; border-radius: 521px; background-color: #444;color: #f0f0f0;text-align: center; font-size: 74pt; margin-top: 30px !important;margin-bottom:8px !important}
+.box-title{text-align:center;font-size:20pt}
+.box-text{width:75%;text-align:justify;margin:0 auto;font-size:11pt;margin-bottom: 30px;}
+.top-border{min-height: 620px; padding-top: 55px !important;}
+.big-text{ font-size: 32pt; margin-left: 46px; text-shadow: 3px 3px 6px rgba(150, 150, 150, 1);}
+.medium-text{margin-left: 10%;font-size:15pt;text-align:justify;width:75%}
+.text-half{padding:15px !important;}
+.box-shadow{ width: 80%;-webkit-box-shadow: -1px 3px 14px 4px rgba(50, 50, 50, 0.75); margin: 30px !important;-moz-box-shadow: -1px 3px 14px 4px rgba(50, 50, 50, 0.75);box-shadow: -1px 3px 14px 4px rgba(50, 50, 50, 0.75);vertical-align: top; position: relative;}
+.button-container{position: absolute;right: 100px;width:200px;}
+.btn-left{ left: 100px !important;}
+.material-select{display:inline-block;background: #fff;padding: 6px 10px 6px 30px;border: 1px solid #aaa;border-radius: 4px;font-size: 13pt;}
+.big-row{ line-height: 67px;}
+.form-inline{ display: inline-block;}
+.material-item{ height: 200px; border-bottom: 6px solid #888; border-right: 2px solid #c0c0c0; padding: 5px !important; text-align: center;}
+.disabled{ opacity: .4;}
+
+.tab-content{ background-color: #fff;}
+.material-image{ height: 70%;width: 100%;text-align: center;}
+.material-title{ background-color: #f0f0f0;color: #444; height: 27%; width: 95%; margin: 0 auto !important; font-size: 12pt; padding: 3px !important; position: absolute; z-index: 1000; opacity: .9; bottom: 15px;}
+
+
+
